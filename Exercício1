@@ -1,0 +1,43 @@
+<!--Exercício-->
+<html>
+<head>
+
+<style>
+    table, th, tr, td {
+        border: 1px solid black;
+    }
+    table, th, tr, td {
+        padding: 5px;
+    }
+    </style>
+<h1>Tabela Informativa</h1>
+<table style="background-color:#01ac79">
+    <tr>
+        <th>Produto</th> <!--Cabeçalho-->
+        <th>Codigo</th>
+        <th>Preço</th>
+    </tr>
+    <tr>
+        <td>Shampoo</td>
+        <td>001</td>
+        <td>R$24,99</td>
+    </tr>
+    <tr>
+        <td>Condicionador</td>
+        <td>002</td>
+        <td>R$22,90</td>
+    </tr>
+    <tr>
+        <td>Creme de pentear</td>
+        <td>003</td>
+        <td>R$18,97</td>
+    </tr>
+    <tr>
+        <td>Oleo reparador</td>
+        <td>004</td>
+        <td>R$36,95</td>
+    </tr>
+</table>
+
+</head>
+</html>
