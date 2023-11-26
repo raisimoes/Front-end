@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .destinos-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .destino {
+        width: 30%;
+        margin: 20px;
+        box-shadow: 0 4px 8px lightseagreen;
+        transition: transform 0.3s ease-in-out
+    }
+
+    .destino:hover{
+        transform: scale(1.05);
+    }
+
+    .destino img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .destino-info {
+        padding: 15px;
+    }
