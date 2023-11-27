@@ -13,21 +13,42 @@ body {
 
     .destino {
         width: 30%;
-        margin: 20px;
-        box-shadow: 0 4px 8px lightseagreen;
-        transition: transform 0.3s ease-in-out
+        margin: 10px;
+        box-shadow: 0 4px 10px lightsalmon;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgb(253, 176, 146);
     }
 
-    .destino:hover{
+    .destino:hover {
         transform: scale(1.05);
     }
 
-    .destino img{
-        width: 100%;
+    .destino img {
+        display: flex;
+        justify-content: center;
+        width: 90%;
         height: 200px;
         object-fit: cover;
     }
 
     .destino-info {
         padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #2980b9;
     }
