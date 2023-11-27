@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     .destinos-container {
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .destino {
@@ -17,6 +17,7 @@ body {
         box-shadow: 0 4px 10px lightsalmon;
         transition: transform 0.3s ease-in-out;
         background-color: rgb(253, 176, 146);
+        border-radius: 10px;
     }
 
     .destino:hover {
@@ -24,11 +25,11 @@ body {
     }
 
     .destino img {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        height: 200px;
+        padding: 8.5px;
+        width: 92%;
+        height: 35%;
         object-fit: cover;
+        border-radius: 10%;
     }
 
     .destino-info {
@@ -37,6 +38,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        line-height: 0.0;
     }
 
     button {
