@@ -1,0 +1,57 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: darkred
+}
+
+    .destinos-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .destino {
+        width: 30%;
+        margin: 10px;
+        box-shadow: 0 4px 10px lightsalmon;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgb(253, 176, 146);
+        border-radius: 10px;
+    }
+
+    .destino:hover {
+        transform: scale(1.05);
+    }
+
+    .destino img {
+        padding: 8.5px;
+        width: 92%;
+        height: 35%;
+        object-fit: cover;
+        border-radius: 10%;
+    }
+
+    .destino-info {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 0.0;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
