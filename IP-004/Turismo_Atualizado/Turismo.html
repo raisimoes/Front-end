@@ -1,27 +1,14 @@
-<!-- Criação de um design para ser utilizado por uma agência de turismo.
-A tarefa consiste em criar uma classe de destinos, na qual deve incluir:
-[o nome do destino, a imagem principal do destino, o que está incluso no
-pacote, o preço e se as taxas estão inclusas ou não, a forma de pagamento
-e por fim o botão de comprar. O design deve ser flexível e deve ser capaz
-de abrigar 3 destinos quando a janela possuir uma largura maior que 1200px
-como ilustrado na Figura 1. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Stylee.css">
     <title>Agência de Turismo</title>
-    <link rel="stylesheet">
-    <link href="https://fonts.google.com/share?selection.family=Montserrat:wght@200|Oswald|Roboto"> 
 
 </head>
 <body>
-    <!-- contêiner divisor dos destinos -->
     <div class="destinos-container">
-
-        <!-- contêiner divisor do destino 1 -->
         <div class="destino">
             <img src="https://www.japaratingaresort.com.br/img/gallery/home/japaratinga-lounge-resort-piscinas-naturais-mobile.jpg" alt="Destino 1">
             <div class="destino-info">
@@ -36,7 +23,6 @@ como ilustrado na Figura 1. -->
             </div>
         </div>
 
-        <!-- contêiner divisor do destino 2 -->
         <div class="destino">
             <img src="https://www.recifepasseios.com.br/blog/wp-content/uploads/2022/07/caminho-praia-maragogi.jpg" alt="Destino 2">
             <div class="destino-info">
@@ -51,7 +37,6 @@ como ilustrado na Figura 1. -->
             </div>
         </div>
 
-        <!-- contêiner divisor do destino 3 -->
         <div class="destino">
             <img src="https://i0.wp.com/blog.brightcities.city/wp-content/uploads/2021/04/img-aracaju-1.jpeg?resize=492%2C587&ssl=1" alt="Destino 3"> 
             <div class="destino-info">
@@ -66,5 +51,30 @@ como ilustrado na Figura 1. -->
             </div>
         </div>  
     </div>
+
+    <hr>
+
+    <div class="form-container">
+        <form id="formViagem">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="urlImagem">URL da Imagem:</label>
+            <input type="text" id="urlImagem" name="urlImagem" required>
+
+            <label for="detalhes">Preço:</label>
+            <input id="detalhes" name="detalhes" required></textarea>
+
+            <button type="button" onclick="inserirItem()">Inserir</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="destinos-container" id="destinosContainer">
+
+    </div>
+
+    <script src="Script.js"></script>
 </body>
 </html>
