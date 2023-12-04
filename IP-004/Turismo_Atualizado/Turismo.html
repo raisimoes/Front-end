@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Stylee.css">
+    <link rel="stylesheet" href="style.css">
     <title>Agência de Turismo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">"
 </head>
 <body>
     <div class="destinos-container">
@@ -19,7 +22,7 @@
                 <h3>R$670,00</h3>
                 <h5>Taxas inclusas</h5>
                 <h5>Em até 10x sem juros</h5>
-                <button>Comprar</button>
+                <button onclick="capturarInformacoes(this)">Comprar</button>
             </div>
         </div>
 
@@ -33,7 +36,7 @@
                 <h3>R$1513,00</h3>
                 <h5>Taxas inclusas</h5>
                 <h5>Em até 10x sem juros</h5>
-                <button>Comprar</button>
+                <button onclick="capturarInformacoes(this)">Comprar</button>
             </div>
         </div>
 
@@ -47,32 +50,9 @@
                 <h3>R$900,00</h3>
                 <h5>Taxas inclusas</h5>
                 <h5>Em até 10x sem juros</h5>
-                <button>Comprar</button>
+                <button onclick="capturarInformacoes(this)">Comprar</button>
             </div>
         </div>  
-    </div>
-
-    <hr>
-
-    <div class="form-container">
-        <form id="formViagem">
-            <label for="destino">Destino:</label>
-            <input type="text" id="destino" name="destino" required>
-
-            <label for="urlImagem">URL da Imagem:</label>
-            <input type="text" id="urlImagem" name="urlImagem" required>
-
-            <label for="detalhes">Preço:</label>
-            <input id="detalhes" name="detalhes" required></textarea>
-
-            <button type="button" onclick="inserirItem()">Inserir</button>
-        </form>
-    </div>
-
-    <hr>
-
-    <div class="destinos-container" id="destinosContainer">
-
     </div>
 
     <script src="Script.js"></script>

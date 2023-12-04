@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agência de Turismo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">"
+</head>
+<body>
+    <div class="destinos-container">
+        <div class="destino">
+            <!--Informações anteriores dos pacotes de viagem-->
+    <div class="form-container">
+        <h2>Adicionar novo pacote de viagem</h2>
+        <form id="formViagem">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="urlImagem">URL da Imagem:</label>
+            <input type="text" id="urlImagem" name="urlImagem" required>
+
+            <label for="detalhes">Preço:</label>
+            <input id="detalhes" name="detalhes" required></textarea>
+
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" name="preco" required></textarea>
+
+            <button type="button" onclick="inserirItem()">Inserir</button>
+        </form>
+    </div>
+</div>
+
+<div class="destinos-container" id="destinosContainer">
+            <!--Por JavaScrip os destinos serão adicionados aqui-->
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
